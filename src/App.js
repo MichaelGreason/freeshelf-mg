@@ -1,6 +1,9 @@
 import './App.css'
 import bookData from './book-data.json'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesRight, faAnglesDown } from '@fortawesome/free-solid-svg-icons'
+
 
 function App() {
   return (
@@ -23,7 +26,7 @@ function BD({ book }) {
       <h4>{book.title}</h4>
       <p><strong>{book.author}</strong></p>
       <div>{book.shortDescription}</div>
-      <button onClick={() => setExpanded(!expanded)}></button>
+      <FontAwesomeIcon icon={expanded ? faAnglesDown : faAnglesRight} onClick={() => setExpanded(!expanded)} />
       {
         expanded && <div><p><strong>URL: </strong><a>{book.url}</a></p>
         <p><strong>Publisher: </strong>{book.publisher}</p>
