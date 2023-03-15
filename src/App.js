@@ -23,7 +23,7 @@ function BD({ book }) {
       <h4>{book.title}</h4>
       <p><strong>{book.author}</strong></p>
       <div>{book.shortDescription}</div>
-      <button onClick={() => setExpanded(!expanded)}>MORE</button>
+      <button onClick={() => setExpanded(!expanded)}></button>
       {
         expanded && <div><p><strong>URL: </strong><a>{book.url}</a></p>
         <p><strong>Publisher: </strong>{book.publisher}</p>
