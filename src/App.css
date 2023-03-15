@@ -1,0 +1,36 @@
+.bigbox {
+  /* border: 2px solid black; */
+  margin: auto;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.freeshelf {
+  padding-left: 30px;
+}
+
+.shortD {
+  /* border: 2px solid black; */
+  width: 500px;
+  flex-wrap: wrap;
+  display:flex;
+  justify-content: left;
+}
+
+.short-image {
+  display:flex; 
+  justify-content: space-between;
+}
+
+.image {
+  display: flex;
+  margin-right: 50PX;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.arrow {
+  
+}
