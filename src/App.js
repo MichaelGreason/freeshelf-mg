@@ -2,13 +2,15 @@ import './App.css'
 import bookData from './book-data.json'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesRight, faAnglesDown } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesRight, faAnglesDown, faBook } from '@fortawesome/free-solid-svg-icons'
 
 
 function App() {
   return (
     <div className="section">
-      <h1 className='freeshelf'>Freeshelf</h1>
+      <div className='header'>
+        <FontAwesomeIcon className='bookIcon' icon={faBook} /><h1 className='freeshelf'>Freeshelf</h1>
+      </div>
       <div>
         {bookData.map(book => {
           return <BD book={book} />

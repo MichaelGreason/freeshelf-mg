@@ -1,9 +1,14 @@
+* {
+  background-color: #EDE7D9;
+  font-family: 'Roboto Mono', monospace;}
+
 .bigbox {
   /* border: 2px solid black; */
   width: 49%;
   padding-left: 5%;
   padding-right: 10px;
   padding-bottom: 10px;  
+  padding-top: 10px;
 }
 
 .all {
@@ -11,12 +16,11 @@
   justify-content: space-between;
 }
 
-.freeshelf {
-  padding-left: 30px;
-}
+
 
 .imageBox {
   /* border: 2px solid black; */
+  padding-top: 10px;
   width: max-content;
   display: flex;
   justify-content: end;
@@ -33,4 +37,16 @@
 
 .title {
   margin-top: 10px;
+}
+
+.header {
+  display:flex;
+  justify-content: center;
+  border-bottom: solid 5px #4B4237;
+
+}
+
+.bookIcon {
+  padding-top: 15px;
+  padding-right: 15px;;
 }
