@@ -49,7 +49,7 @@ function BD({ book }) {
       }
       </div>
       <div className='imageBox'>
-      <div className='image'>{showImage ? (<img src={book.coverImageUrl} alt="cover" width="80%" height="80%" onError={hideImg}/>) :  ''}</div>
+      <div className='image'><a href={book.url}> {showImage ? (<img src={book.coverImageUrl} alt="cover" width="80%" height="80%" onError={hideImg}/>) :  ''}</a></div>
       </div>
     </div>
       </>
