@@ -41,7 +41,7 @@ function BD({ book }) {
       </button>
       {
         expanded && 
-        <div><p><strong>URL: </strong><a href={book.url}>{book.url}</a></p>
+        <div><p className='url' ><strong>URL: </strong><a className='url2' href={book.url}>{book.url}</a></p>
         {book.publisher ? <p><strong>Publisher: </strong>{book.publisher}</p> : ''}
         {book.publicationDate ? <p><strong>Publication Date: </strong>{book.publicationDate}</p> : ''}
         <p><strong>Full Description: </strong>{book.detailedDescription}</p>

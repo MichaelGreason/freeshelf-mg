@@ -55,3 +55,7 @@
   border: 1px solid #736B60;
   margin-top: 5px;
 }
+
+.url {
+  overflow-wrap: break-word;
+}
