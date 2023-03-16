@@ -50,3 +50,8 @@
   padding-top: 15px;
   padding-right: 15px;;
 }
+
+.showButton {
+  border: 1px solid #736B60;
+  margin-top: 5px;
+}

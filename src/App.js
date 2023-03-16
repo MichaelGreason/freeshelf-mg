@@ -35,7 +35,10 @@ function BD({ book }) {
       <h4 className='title'>{book.title}</h4>
         <p><strong>{book.author}</strong></p>
             <div className='shortD'>{book.shortDescription}</div>
-      <FontAwesomeIcon className='arrow' icon={expanded ? faAnglesDown : faAnglesRight} onClick={() => setExpanded(!expanded)} />
+            <button className='showButton' onClick={() => setExpanded(!expanded)}>
+      <span><FontAwesomeIcon className='arrow' icon={expanded ? faAnglesDown : faAnglesRight} /></span>
+      <span>{expanded ? ' Show less' : ' Show more'}</span>
+      </button>
       {
         expanded && 
         <div><p><strong>URL: </strong><a href={book.url}>{book.url}</a></p>
